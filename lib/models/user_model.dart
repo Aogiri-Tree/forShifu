@@ -1,20 +1,20 @@
 class User {
-  int? id;
-  String? name;
+  late int id;
+  late String name;
   String? username;
-  String? email;
+  late String email;
   Address? address;
-  String? phone;
+  late String phone;
   String? website;
   Company? company;
 
   User(
-      {this.id,
-      this.name,
+      {required this.id,
+      required this.name,
       this.username,
-      this.email,
+      required this.email,
       this.address,
-      this.phone,
+      required this.phone,
       this.website,
       this.company});
 

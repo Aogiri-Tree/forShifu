@@ -5,4 +5,6 @@ abstract class UserEvent {}
 
 class UserLoadedEvent extends UserEvent {}
 
-class UserResetEvent extends UserEvent {}
+
+class UserClearEvent extends UserEvent {}
+

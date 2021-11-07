@@ -26,10 +26,14 @@ class ActionButtons extends StatelessWidget {
           style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all(Colors.red)),
           onPressed: () {
-            userBloc.add(UserResetEvent());
+            userBloc.add(UserClearEvent());
+            
           },
-          child: const Text('Reset'),
-        )
+          child: const Text('Clear'),
+        ),
+        const SizedBox(
+          width: 10,
+        ),
       ],
     );
   }

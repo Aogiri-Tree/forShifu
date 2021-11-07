@@ -13,9 +13,20 @@ class UserLoadedState extends UserState {
 }
 
 class UserErrorState extends UserState {
-  final dynamic error; 
+  final dynamic error;
   UserErrorState({required this.error});
 }
+
+class UserCachSaveState extends UserState {
+  final int? id;
+  final String? name;
+  final String? email;
+  final String? phone;
+
+  UserCachSaveState({this.id, this.name, this.email, this.phone});
+}
+
+class UserCachLoadedState extends UserState {}
 
 // class SnackbarInitial extends UserState {}
 
