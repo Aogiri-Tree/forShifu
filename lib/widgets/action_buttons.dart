@@ -20,7 +20,7 @@ class ActionButtons extends StatelessWidget {
           child: const Text('Load'),
         ),
         const SizedBox(
-          width: 10,
+          width: 15,
         ),
         ElevatedButton(
           style: ButtonStyle(
